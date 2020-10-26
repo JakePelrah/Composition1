@@ -44,9 +44,9 @@ def create_bars(num_bars, notes, note_values):
 
 def main():
     # Notes of A dorian
-    notes = ['A', 'B', 'C', 'D', 'E', 'F#', 'G', 'REST']
+    notes = ['A', 'B', 'C', 'D', 'E', 'F#', 'G']
     # half, quarter, eighth, sixteenth
-    note_values = [2, 1, 1/2, 1/4]
+    note_values = [1, 1/2, 1/4]
     bars = create_bars(20, notes, note_values)
     with open('randomLine.txt', 'w') as outfile:
         for index, bar in enumerate(bars):
